@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
-const webhooknitroverifs = new Discord.WebhookClient('725329129037103135' , 'Jq_NcyS17uExGLFy6pfv0UaLoFzN-Ari9-uCAC0WLbr5RXukyotwlsXywLFZxrtoK_r7')
+const webhooknitroverifs = new Discord.WebhookClient('725329129037103135' , 'process.env.TOKEN2')
 
 //instance
 bot.on('ready', function () {
