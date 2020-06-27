@@ -1,6 +1,5 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
-const webhooknitroverifs = new Discord.WebhookClient('725329129037103135' , 'process.env.TOKEN2')
 
 //instance
 bot.on('ready', function () {
@@ -17,9 +16,16 @@ if (message.content === 'g!serverinfo') {
 	let server_name = message.guild.name
 	let server_size = message.guild.members.server_size
 	message.channel.send('Server : ' + server_name + '\nMembres : ' + server_size)
-	webhooknitroverifs.send('Bonjours')
     }
 
+    if (message.content === 'Salut') {
+    	message.channel.send('Hey')
+		
+	if (message.content === 'g!pute') {
+		message.channel.send('Ok tu es banni <Ban:718455295298240514>')
+	}
+	
+    }
 })
 
-bot.login(process.env.TOKEN)
+bot.login('process.env.TOKEN')
